@@ -73,12 +73,15 @@ public class Jira {
 			if (commentIdCount.equalsIgnoreCase(getCommentId)) {
 				String message = js3.get("fields.comment.comments[" + i + "].body");
 				System.out.println(message);
-				Assert.assertEquals(expectedMessage, message);
-	
+				org.junit.Assert.assertEquals(expectedMessage, message);
+
 			}
 
 		}
 
-
+		System.out.println("demo");
+		System.out.println("demo");
+		System.out.println("demo");
+		System.out.println("demo");
 	}
 }
