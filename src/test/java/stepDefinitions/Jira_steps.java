@@ -117,6 +117,10 @@ public class Jira_steps extends Utils {
 		String dateUpdated = js.get("updated");
 		System.out.println(dateCreated);
 		System.out.println(dateUpdated);
+		
+		//
+		System.out.println(dateCreated);
+		System.out.println(dateUpdated);
 	}
 
 }
