@@ -118,9 +118,16 @@ public class Jira_steps extends Utils {
 		System.out.println(dateCreated);
 		System.out.println(dateUpdated);
 		
-		//
+		//	
 		System.out.println(dateCreated);
 		System.out.println(dateUpdated);
+		//added
+		@Then("^User update the comment")
+		public void user_update_the_qcomment() throws Throwable {
+			String updateComment = given().filter(session).pathParam("i_d", getID).pathParam("comment_id", getCommentId)
+					.header("Content-Type", "application/json").body(data.updateCommentJson()).filter(session).when().log()
+					.all().put("/rest/api/2/issue/{i_d}/comment/{comment_id}").then().log().all().assertThat()
+					.statusCode(200).extract().response().asString();
 	}
 
 }
