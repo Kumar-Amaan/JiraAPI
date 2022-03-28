@@ -1,0 +1,16 @@
+Request method:	POST
+Request URI:	https://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "Aman.1.Kumar",
+    "password": "Singhal0123@"
+}
